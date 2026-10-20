@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peter Karki — Creative Developer, Kathmandu</title>
+  <meta name="description" content="Peter Karki is a creative developer in Kathmandu building XR training simulations, Unreal digital twins, games and web 3D.">
+  <link rel="canonical" href="https://peterkarki.com.np/">
+  <script>
+    try {
+      var t = localStorage.getItem('ktm-theme') || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.dataset.theme = t;
+    } catch (e) { document.documentElement.dataset.theme = 'dark'; }
+  </script>
+  <meta name="theme-color" content="#0e0f12">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Peter Karki — Creative Developer">
+  <meta property="og:description" content="XR, games and web 3D from Kathmandu.">
+  <meta property="og:url" content="https://peterkarki.com.np/">
+  <meta property="og:image" content="https://peterkarki.com.np/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Peter Karki",
+    "jobTitle": "Creative Developer",
+    "url": "https://peterkarki.com.np/",
+    "email": "mailto:peter.karki0422@gmail.com",
+    "image": "https://peterkarki.com.np/img/avatar.webp",
+    "address": { "@type": "PostalAddress", "addressLocality": "Kathmandu", "addressCountry": "NP" },
+    "worksFor": { "@type": "Organization", "name": "Paracosma" },
+    "alumniOf": [{ "@type": "CollegeOrUniversity", "name": "Sunway College Kathmandu" }, { "@type": "CollegeOrUniversity", "name": "Softwarica College of IT & E-Commerce" }],
+    "sameAs": ["https://www.linkedin.com/in/peterkarki/", "https://github.com/pinological"]
+  }
+  </script>
+
+  <script type="module" crossorigin src="/assets/main-Df5rUWKa.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-BwQF3Gsr.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared gradients for the chrome icons in Character Select -->
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="chrome" x1="0" y1="0" x2="0.35" y2="1">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset="0.38" stop-color="#a7adb7"/>
+        <stop offset="0.5" stop-color="#f4f6f8"/>
+        <stop offset="0.62" stop-color="#7d838d"/>
+        <stop offset="1" stop-color="#e6e9ee"/>
+      </linearGradient>
+      <linearGradient id="chrome-acid" x1="0" y1="0" x2="0.35" y2="1">
+        <stop offset="0" stop-color="#ffffff"/>
+        <stop offset="0.4" stop-color="#d4ff3a"/>
+        <stop offset="0.52" stop-color="#f7ffd6"/>
+        <stop offset="0.66" stop-color="#8fb318"/>
+        <stop offset="1" stop-color="#eaff9a"/>
+      </linearGradient>
+      <linearGradient id="chrome-ink" x1="0" y1="0" x2="0.35" y2="1">
+        <stop offset="0" stop-color="#5c6370"/>
+        <stop offset="0.4" stop-color="#1c1f24"/>
+        <stop offset="0.52" stop-color="#8a919c"/>
+        <stop offset="0.66" stop-color="#16181c"/>
+        <stop offset="1" stop-color="#4b525c"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="boot" id="boot" hidden aria-hidden="true">
+    <div class="boot__inner">
+      <div class="boot__log" id="boot-log">
+        <div>&gt; MOUNTING /work ............. <span class="accent">OK</span></div>
+        <div>&gt; CALIBRATING CRT ............. <span id="boot-pct">0%</span></div>
+      </div>
+      <p class="boot__title">Booting<span class="accent">_</span></p>
+      <div class="boot__bar"><i id="boot-bar"></i></div>
+    </div>
+  </div>
+
+  <header class="hud">
+    <div class="container hud__inner">
+      <a class="logo" href="#top" aria-label="Peter Karki, back to top">
+        <span class="logo__mark" aria-hidden="true">PK</span>
+        <span class="logo__text" aria-hidden="true">PETER KARKI</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#profile">PROFILE</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#work">MISSIONS</a>
+        <a href="#quests">SIDE QUESTS</a>
+        <a href="#comms">COMMS</a>
+      </nav>
+      <div class="hud__tools">
+        <div class="seg" role="group" aria-label="Render mode">
+          <button type="button" data-mode="lite" aria-pressed="false">LITE</button>
+          <button type="button" data-mode="full" aria-pressed="true">FULL</button>
+        </div>
+        <button type="button" class="icon-btn theme-btn" id="theme-btn" aria-label="Switch to light mode">
+          <svg class="ico-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+          <svg class="ico-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button type="button" class="icon-btn" id="sound-btn" aria-pressed="false" aria-label="Sound off. Turn sound on">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="snd-off" d="m22 9-6 6M16 9l6 6"/><path class="snd-on" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" style="display:none"/></svg>
+        </button>
+        <button type="button" class="icon-btn menu-btn" id="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 01 HERO -->
+    <section class="container hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__screen-wrap crt scan">
+        <div class="crt__screen hero__screen" id="hero-screen">
+          <img class="hero__poster" src="/img/photo.webp" alt="Photo of Peter Karki" width="400" height="400">
+          <div class="hero__stage" id="hero-stage"></div>
+          <p class="hero__status" id="hero-status" aria-hidden="true">&gt; LOADING peter.glb ... 0%</p>
+          <span class="hero__hint" aria-hidden="true">CLICK · TAP TO RESCAN</span>
+          <span class="hero__coords">CH 01 · 27.71°N 85.32°E</span>
+        </div>
+      </div>
+      <div class="hero__copy">
+        <div class="hero__tags">
+          <span class="tag tag--acid tag--tilt">CREATIVE DEVELOPER</span>
+          <span class="tag">KATHMANDU</span>
+        </div>
+        <h1 class="hero__name" id="hero-title">Peter<br>Karki<span class="accent">.</span></h1>
+        <p class="hero__roles" aria-label="Game developer, XR, web 3D, teacher">&gt; <span id="role-cycle">GAME DEV / <strong>XR</strong> / WEB 3D / TEACHER</span><span class="cursor" aria-hidden="true">_</span></p>
+        <p class="hero__lede">I build XR training sims, digital twins, games and web 3D — and teach others to do the same.</p>
+        <div class="hero__ctas">
+          <a class="btn btn--primary" href="#work">View Missions</a>
+          <a class="btn" href="/cv.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>UNREAL ✦ UNITY ✦ THREE.JS ✦ WEBXR ✦ BLENDER ✦ MERN ✦ C++ ✦ PYTHON ✦ C# ✦ FIGMA ✦ DAVINCI ✦</span>
+        <span>UNREAL ✦ UNITY ✦ THREE.JS ✦ WEBXR ✦ BLENDER ✦ MERN ✦ C++ ✦ PYTHON ✦ C# ✦ FIGMA ✦ DAVINCI ✦</span>
+      </div>
+    </div>
+
+    <!-- 02 PROFILE -->
+    <section class="container section" id="profile" aria-labelledby="profile-title" style="padding-top: 120px">
+      <div class="section__head">
+        <h2 class="section__title" id="profile-title" data-scramble>Agent Profile</h2>
+        <p class="pager"><b>02</b> / 08 · ABOUT</p>
+      </div>
+      <div class="profile">
+        <article class="id-card reveal" aria-label="Agent ID card">
+          <div class="id-card__top"><span>ID · PK-0001</span><span class="id-card__rank">RANK S</span></div>
+          <div class="avatar-fx" id="avatar-fx">
+            <img class="avatar-fx__img" src="/img/avatar.webp" alt="Illustrated portrait of Peter Karki" width="900" height="900" loading="lazy">
+            <img class="avatar-fx__slice avatar-fx__slice--a" src="/img/avatar.webp" alt="" aria-hidden="true" loading="lazy">
+            <img class="avatar-fx__slice avatar-fx__slice--b" src="/img/avatar.webp" alt="" aria-hidden="true" loading="lazy">
+            <span class="avatar-fx__halftone" aria-hidden="true"></span>
+            <span class="avatar-fx__holo" aria-hidden="true"></span>
+            <span class="avatar-fx__scan" aria-hidden="true"></span>
+            <span class="avatar-fx__ticks" aria-hidden="true"></span>
+            <span class="avatar-fx__sticker" aria-hidden="true">VERIFIED ✦ PK</span>
+            <span class="avatar-fx__rec mono" aria-hidden="true">● CAM 02</span>
+            <span class="avatar-fx__drag" aria-hidden="true">⟲ DRAG TO SPIN</span>
+          </div>
+          <dl class="id-card__facts">
+            <div><dt>FACTION</dt><dd>Paracosma</dd></div>
+            <div><dt>FIELD TIME</dt><dd>5 YRS</dd></div>
+            <div><dt>BASE</dt><dd>Kathmandu, NP</dd></div>
+            <div><dt>CLASS</dt><dd>Game Developer</dd></div>
+          </dl>
+          <div class="barcode" aria-hidden="true"></div>
+        </article>
+        <div class="profile__text">
+          <p class="profile__lede reveal">Five years across graphic design, game development and web development: AR/VR training sims, Unreal digital twins, ML data pipelines and playable web 3D.</p>
+          <p class="profile__body reveal">Game Developer at Paracosma since 2022. Currently studying an MSc in Data Science &amp; AI (Softwarica / Coventry University). Previously worked as a Game Development TA at Presidential Graduate School (Westcliff University), Kathmandu, and as a graphic designer at G-Force Security.</p>
+          <dl class="profile__meta reveal">
+            <div><dt>EDUCATION · NOW</dt><dd>MSc Data Science &amp; AI · Softwarica College (Coventry University)</dd></div>
+            <div><dt>EDUCATION</dt><dd>BCS (Hons) · Sunway College Kathmandu, 2019–2022</dd></div>
+            <div><dt>LANGUAGES</dt><dd>Nepali · English · Hindi</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 SKILLS -->
+    <section class="container section" id="skills" aria-labelledby="skills-title">
+      <div class="section__head">
+        <h2 class="section__title" id="skills-title" data-scramble>Character Select</h2>
+        <p class="pager"><b>03</b> / 08 · ← → TO BROWSE</p>
+      </div>
+      <div class="select">
+        <div class="select__grid" role="tablist" aria-label="Skill classes" id="agents"></div>
+        <div class="select__detail brk" role="tabpanel" id="agent-panel" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- 04 WORK -->
+    <section class="container section" id="work" aria-labelledby="work-title">
+      <div class="section__head">
+        <h2 class="section__title" id="work-title" data-scramble>Mission Log</h2>
+        <p class="pager"><b>04</b> / 08 · WORK</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter missions by channel">
+        <button type="button" class="filter" data-filter="all" aria-pressed="true">ALL</button>
+        <button type="button" class="filter" data-filter="xr" aria-pressed="false">CH1 · XR</button>
+        <button type="button" class="filter" data-filter="game" aria-pressed="false">CH2 · GAME</button>
+        <button type="button" class="filter" data-filter="web" aria-pressed="false">CH3 · WEB</button>
+        <button type="button" class="filter" data-filter="ai" aria-pressed="false">CH5 · AI</button>
+      </div>
+      <ul class="missions" id="missions">
+        <li data-channel="xr">
+          <a class="mission rgb-hover reveal" href="/work/hydrogen-digital-twin/">
+            <div class="mission__top"><span class="mission__id">M-01 · PARACOSMA</span><span class="tag tag--acid tag--sm">XR</span></div>
+            <h3 class="mission__title rgb-target">Hydrogen Digital Twin</h3>
+            <p class="mission__desc">Unreal Engine visualizer that simulates hydrogen leaks and shows their effect on wind, pressure, graphs and point-cloud data.</p>
+            <span class="mission__more">VIEW MISSION <span aria-hidden="true">→</span></span>
+          </a>
+        </li>
+        <li data-channel="ai">
+          <div class="mission reveal">
+            <div class="mission__top"><span class="mission__id">M-02 · PARACOSMA</span><span class="tag tag--sm">AI</span></div>
+            <h3 class="mission__title">ML Data-Gen App</h3>
+            <p class="mission__desc">Unreal app that imports 100 models, captures 72 angles of RGB + depth, and exports 1024, 512 and 256 px images for ML training.</p>
+          </div>
+        </li>
+        <li data-channel="xr">
+          <div class="mission reveal">
+            <div class="mission__top"><span class="mission__id">M-03 · PARACOSMA</span><span class="tag tag--acid tag--sm">XR</span></div>
+            <h3 class="mission__title">Medical &amp; Industrial XR</h3>
+            <p class="mission__desc">AR and VR training simulation games for the medical and industrial sector.</p>
+          </div>
+        </li>
+        <li data-channel="game">
+          <div class="mission reveal">
+            <div class="mission__top"><span class="mission__id">M-04 · PARACOSMA</span><span class="tag tag--sm">GAME</span></div>
+            <h3 class="mission__title">Virtual Production</h3>
+            <p class="mission__desc">Motion capture and virtual production in Unreal Engine for engaging real-time content.</p>
+          </div>
+        </li>
+        <li data-channel="web">
+          <div class="mission reveal">
+            <div class="mission__top"><span class="mission__id">M-05 · PARACOSMA</span><span class="tag tag--sm">WEB</span></div>
+            <h3 class="mission__title">3D Web Library</h3>
+            <p class="mission__desc">3D library site for a gas and vehicle company, plus a landing page for a 3D model player.</p>
+          </div>
+        </li>
+        <li data-channel="web">
+          <div class="mission reveal">
+            <div class="mission__top"><span class="mission__id">M-06 · SUNWAY</span><span class="tag tag--sm">WEB</span></div>
+            <h3 class="mission__title">Expo Nepal 2025 AR Ads</h3>
+            <p class="mission__desc">QR-launched web AR: one banner triggers a 3D college model, another a promo ad. A-Frame, Three.js, MindAR.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 05 SIDE QUESTS -->
+    <section class="container section" id="quests" aria-labelledby="quests-title">
+      <div class="section__head">
+        <h2 class="section__title" id="quests-title" data-scramble>Side Quests</h2>
+        <p class="pager"><b>05</b> / 08 · ARCADE</p>
+      </div>
+      <ul class="quests">
+        <li>
+          <div class="quest quest--feature reveal">
+            <p class="quest__meta">Q-01 · MINI-GAME</p>
+            <h3 class="quest__title">Changa Chett: Kite Fight</h3>
+            <p class="quest__desc">A Dashain kite-fighting game: cut the other kite's string before it cuts yours.</p>
+          </div>
+        </li>
+        <li>
+          <div class="quest reveal">
+            <p class="quest__meta">Q-02 · HARDWARE</p>
+            <h3 class="quest__title">LoRa / ESP32 Builds</h3>
+            <p class="quest__desc">Long-range radio and microcontroller experiments.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- 06 + 07 -->
+    <section class="container section split" aria-label="Achievements and teaching">
+      <div>
+        <div class="section__head">
+          <h2 class="section__title" data-scramble>Achievements</h2>
+          <p class="pager"><b>06</b> / 08</p>
+        </div>
+        <div class="toasts">
+          <div class="toast reveal">
+            <div class="toast__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
+            <div class="toast__body"><span class="toast__kicker">ACHIEVEMENT UNLOCKED · 2021</span><span class="toast__title">Hult Prize — 2nd Runner-Up</span><span class="toast__sub">Khana App · Hult Prize at Sunway International Business School</span></div>
+          </div>
+          <div class="toast reveal">
+            <div class="toast__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 2.6 5.3 5.9.9-4.2 4.1 1 5.8L12 16.4 6.7 19.1l1-5.8L3.5 9.2l5.9-.9z"/></svg></div>
+            <div class="toast__body"><span class="toast__kicker">ACHIEVEMENT UNLOCKED · BCS (HONS)</span><span class="toast__title">Final Year Project Excellence Award</span><span class="toast__sub">Nepali Folklore Game · Sunway College Kathmandu</span></div>
+          </div>
+          <div class="toast reveal">
+            <div class="toast__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M9 14.5 8 22l4-2 4 2-1-7.5"/></svg></div>
+            <div class="toast__body"><span class="toast__kicker">ACHIEVEMENT UNLOCKED · 2019</span><span class="toast__title">1st Place — Project Exhibition</span><span class="toast__sub">Programming Fundamentals · Sunway Intra College Exhibition</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section__head">
+          <h2 class="section__title" data-scramble>Training Ground</h2>
+          <p class="pager"><b>07</b> / 08</p>
+        </div>
+        <ol class="timeline">
+          <li class="is-now reveal"><span class="timeline__lv">LV 04 · FEB 2025</span><span class="timeline__title">Mentor — Intro to CNN &amp; OpenCV</span><span class="timeline__sub">NepTech Tribe</span></li>
+          <li class="reveal"><span class="timeline__lv">LV 03 · JUL 2024 – JAN 2025</span><span class="timeline__title">Game Development TA</span><span class="timeline__sub">Presidential Graduate School (Westcliff University), Kathmandu</span></li>
+          <li class="reveal"><span class="timeline__lv">LV 02 · [YEAR]</span><span class="timeline__title">AR / VR Class</span><span class="timeline__sub">Softwarica College</span></li>
+          <li class="reveal"><span class="timeline__lv">LV 01 · 2019</span><span class="timeline__title">Hardware Crash Course</span><span class="timeline__sub">Sunway College Kathmandu</span></li>
+          <!-- Add more short classes / workshops here, newest first. -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- 08 COMMS -->
+    <section class="container section" id="comms" aria-labelledby="comms-title" style="padding-bottom: 120px">
+      <div class="crt scan">
+        <div class="crt__screen comms__screen">
+          <div class="comms__copy">
+            <p class="pager"><b>08</b> / 08 · CONTACT</p>
+            <h2 class="comms__title" id="comms-title">Open a<br>Channel<span class="accent">_</span></h2>
+            <p class="comms__text">Freelance XR, game or web 3D work, teaching, or a collab — send a transmission.</p>
+          </div>
+          <div class="comms__links">
+            <button type="button" class="comms__email" id="copy-email" data-email="peter.karki0422@gmail.com"><span id="email-text">peter.karki0422@gmail.com</span><small id="copy-label">COPY ⧉</small></button>
+            <a class="comms__link" href="https://www.linkedin.com/in/peterkarki/" rel="me noopener" target="_blank"><span>LINKEDIN</span><span aria-hidden="true">↗</span></a>
+            <a class="comms__link" href="https://github.com/pinological" rel="me noopener" target="_blank"><span>GITHUB · PINOLOGICAL</span><span aria-hidden="true">↗</span></a>
+            <a class="comms__link" href="/cv.pdf" download="Peter-Karki-CV.pdf"><span>CV · PDF</span><span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> PETER KARKI · PETERKARKI.COM.NP</span>
+      <span id="clock">KATHMANDU · NPT</span>
+      <div class="flags" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
+  </footer>
+</body>
+</html>

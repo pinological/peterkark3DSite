@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <g transform="rotate(-6 32 32)">
+    <rect x="10" y="10" width="48" height="48" rx="10" fill="#f2f0e6"/>
+    <rect x="5" y="5" width="48" height="48" rx="10" fill="#d4ff3a" stroke="#0e0f12" stroke-width="4"/>
+    <text x="29" y="40" text-anchor="middle" font-family="Impact, Anton, sans-serif" font-size="26" fill="#0e0f12">PK</text>
+  </g>
+</svg>
